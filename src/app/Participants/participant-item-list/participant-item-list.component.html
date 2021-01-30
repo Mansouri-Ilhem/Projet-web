@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Liste de Participants</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let participantItem of participantItems">
+            <td>
+                <app-participant-item [participant]="participantItem"></app-participant-item>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+    <div class="row">
+      <p class="col">Nom : {{participant.nom}}</p>
+      <p class="col">Prenom : {{participant.prenom}}</p>
+    </div>
+    <div class="row">
+      <p class="col">Adresse : {{participant.adresse}}</p>
+      <p class="col">Mail : {{participant.email}}</p>
+    </div> 
+    <div class="row">
+      <p class="col">Societe : {{participant.societe}}</p>
+      <p class="col">Poste : {{participant.poste}}</p>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class=" tools">
+      <a [routerLink]="['../edit', participant.id]" routerLinkActive="active" class="edit">
+        <img src="assets/edit2.png">
+      </a>
+      <a class="delete" (click)="onDelete()">
+        <img src="assets/delete2.png">
+      </a>
+    </div>
+  </div>
+</div>

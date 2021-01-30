@@ -1,0 +1,80 @@
+:host {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.nav{
+    position: absolute;
+    z-index: -1;
+    background-color: #002060;
+    justify-content: flex-end;
+    height: 80px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+#dateAdresse{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+}
+#but{          
+    margin-top: auto;
+    margin-bottom: auto;                                        
+    margin-right: 15px;
+    width: 50px;
+    height: 48px;
+}
+.sidebar{
+    background-color: #002060;
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    float: left;
+}
+.Espace{
+    margin-bottom: 50px;
+}
+#admin{
+    width: 90px;
+    height: 90px;
+}
+#EspaceAdmin{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 15px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+input{
+    margin-left: 15px ;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+a, div{
+    display: flex;
+}
+a{
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid slategray;
+}
+.menu{
+    padding-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+section{
+    position: fixed;
+    top: 90px;
+    left: 360px;
+    width: 80%;
+}

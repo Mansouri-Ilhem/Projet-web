@@ -1,0 +1,13 @@
+:host {
+    color: black;
+    font-size: 18px;
+  }
+  p{
+    margin: 2px;
+  }
+  img{
+    width: 80px;
+  }
+  .col-5{
+    text-align: right;
+  }

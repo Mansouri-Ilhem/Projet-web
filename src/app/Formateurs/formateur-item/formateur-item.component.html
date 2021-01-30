@@ -1,0 +1,25 @@
+<div class="row justify-content-center">
+  <div class="col-6">
+    <div class="row">
+      <p class="col">Nom : {{formateur.nom}}</p>
+      <p class="col">Prenom : {{formateur.prenom}}</p>
+    </div>
+    <div class="row">
+      <p class="col">Adresse : {{formateur.adresse}}</p>
+      <p class="col">Adresse Mail : {{formateur.email}}</p>
+    </div> 
+    <div class="row">
+      <p class="col">Domaine d'expertise : {{formateur.domaineExpertise}}</p>
+    </div>
+  </div>
+  <div class="col-5">
+    <div class=" tools">
+      <a [routerLink]="['../edit', formateur.id]" routerLinkActive="active" class="edit">
+        <img src="assets/edit2.png">
+      </a>
+      <a class="delete" (click)="onDelete()">
+        <img src="assets/delete2.png">
+      </a>
+    </div>
+  </div>
+</div>

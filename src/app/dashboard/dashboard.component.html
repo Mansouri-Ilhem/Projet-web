@@ -1,0 +1,82 @@
+<div class="row">
+  <div class="col Sessions item">
+    <img src="assets/sessions.png">
+    <div class="stat">
+      <p class="number">{{sessionServ.nbSessions}}</p>
+      <p>Sessions</p>
+    </div>
+  </div>
+  <div class="col Participants item">
+    <img src="assets/Participants.png">
+    <div class="stat">
+      <p class="number">{{participantServ.nbParticipants}}</p>
+      <p>Paticipants</p>
+    </div>
+  </div>
+  <div class="col Formateurs item">
+    <img src="assets/Formateurs.png">
+    <div class="stat">
+      <p class="number">{{formateurServ.nbFormateurs}}</p>
+      <p>Formateurs</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Track</th>
+          <th scope="col">Nombre de Sessions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MEAN Stack</td>
+          <td>{{sessionServ.nbForMEAN}}</td>
+        </tr>
+        <tr>
+          <td>Android</td>
+          <td>{{sessionServ.nbForAndroid}}</td>
+        </tr>
+        <tr>
+          <td>Ionic</td>
+          <td>{{sessionServ.nbForIonic}}</td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>{{sessionServ.nbForAngular}}</td>
+        </tr>
+        <tr>
+          <td>NodeJS</td>
+          <td>{{sessionServ.nbForNodeJS}}</td>
+        </tr>
+        <tr>
+          <td>Xamarin</td>
+          <td>{{sessionServ.nbForXamarin}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-3 offset-md-2">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Top Formateurs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img id="icone" src="assets/icone.png">{{formateurServ.firstFormer.nom}}  {{formateurServ.firstFormer.prenom}}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img id="icone" src="assets/icone.png">{{formateurServ.SecondFormer.nom}}  {{formateurServ.SecondFormer.prenom}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

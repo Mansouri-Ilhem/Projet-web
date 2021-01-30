@@ -1,0 +1,14 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Liste de Formateurs</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let formateurItem of formateurItems" >
+            <td>
+                <app-formateur-item [formateur]="formateurItem"></app-formateur-item>
+            </td>
+        </tr>
+    </tbody>
+</table>

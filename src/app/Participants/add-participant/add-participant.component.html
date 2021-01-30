@@ -1,0 +1,50 @@
+<div class="content">
+    <header>
+        <h2>Ajouter un participant</h2>
+    </header>
+    <form #participantItemForm="ngForm" (ngSubmit)="addParticipant(participantItemForm.value)">
+        <div class="row">
+            <div class=" col-1">
+                <label for="nom">Nom</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="nom" id="nom"  ngModel required>
+            </div>
+            <div class=" col-1">
+                <label for="prenom">Prenom</label>
+            </div>
+            <div class=" col">
+                <input type="text" name="prenom" id="prenom" ngModel required>
+            </div>
+        </div>
+        <i class="row">
+            <div class="col-1">
+                <label for="adresse">Adresse</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="adresse" id="adresse"  ngModel required>
+            </div>
+            <div class=" col-1">
+                <label for="email">Mail</label>
+            </div>
+            <div class=" col">
+                <input type="email" name="email" id="email" ngModel required>
+            </div>
+        </i>
+        <div class="row">
+            <div class="col-1">
+                <label for="societe">Societe</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="societe" id="societe"  ngModel required>
+            </div>
+            <div class=" col-1">
+                <label for="poste">Poste</label>
+            </div>
+            <div class=" col">
+                <input type="text" name="poste" id="poste" ngModel required>
+            </div>
+        </div>
+        <button type="submit" [disabled]="!participantItemForm.form.valid">Enregistrer</button>
+    </form>
+</div>

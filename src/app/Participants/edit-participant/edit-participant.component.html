@@ -1,0 +1,50 @@
+<div class="content">
+    <header>
+        <h2>Modifier un participant</h2>
+    </header>
+    <form #participantItemForm="ngForm" (ngSubmit)="editParticipant(participantItemForm.value)">
+        <div class="row">
+            <div class=" col-1">
+                <label for="nom">Nom</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="nom" id="nom"  [(ngModel)]="participant.nom" disabled>
+            </div>
+            <div class=" col-1">
+                <label for="prenom">Prenom</label>
+            </div>
+            <div class=" col">
+                <input type="text" name="prenom" id="prenom" [(ngModel)]="participant.prenom" disabled>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <label for="adresse">Adresse</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="adresse" id="adresse"  [(ngModel)]="participant.adresse" required>
+            </div>
+            <div class=" col-1">
+                <label for="email">Mail</label>
+            </div>
+            <div class=" col">
+                <input type="text" name="email" id="email" [(ngModel)]="participant.email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <label for="societe">Societe</label>
+            </div>
+            <div class=" col-3">
+                <input type="text" name="societe" id="societe" [(ngModel)]="participant.societe" required>
+            </div>
+            <div class=" col-1">
+                <label for="poste">Poste</label>
+            </div>
+            <div class=" col">
+                <input type="text" name="poste" id="poste" [(ngModel)]="participant.poste" required>
+            </div>
+        </div>
+        <button type="submit" [disabled]="!participantItemForm.form.valid">Modifier</button>
+    </form>
+</div>

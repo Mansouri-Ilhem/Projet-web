@@ -1,0 +1,33 @@
+<nav class="nav w-100" >
+  <p id="dateAdresse">Date & Adresse</p>
+  <img id="but" src="assets/button.PNG">
+</nav>
+<nav class="sidebar">
+  <div class="Espace">
+    <img id="admin" src="assets/EspaceAdmin.jpg">
+    <p id="EspaceAdmin">Espace Admin</p>
+  </div>
+  <div class="Espace">
+    <img class="icon" src="assets/recherche.png">
+    <input (keydown.enter)="save($event)" placeholder="Chercher Session">
+  </div>
+  <a routerLink="/Dashboard" routerLinkActive="active" (click)="generer()">
+    <img class="icon" src="assets/Dashboard.png">
+    <p class="menu">Dashboard</p>
+  </a>
+  <a routerLink="/Sessions" routerLinkActive="active">
+    <img class="icon" src="assets/sessions.png">
+    <p class="menu">Sessions</p>
+  </a>
+  <a routerLink="/Formateurs" routerLinkActive="active">
+    <img class="icon" src="assets/Formateurs.png">
+    <p class="menu">Formateurs</p>
+  </a>
+  <a routerLink="/Participants" routerLinkActive="active">
+    <img class="icon" src="assets/Participants.png">
+    <p class="menu">Participants</p>
+  </a>
+</nav>
+<section>
+  <router-outlet></router-outlet>
+</section>
